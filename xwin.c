@@ -50,6 +50,12 @@ void init_x() {
 	unsigned long black,white;
 
 	dis=XOpenDisplay((char *)0);
+
+	if(dis == NULL) {
+	    fprintf(stderr,"error: cannot open window\n");
+	    exit(1);
+    }
+
 	screen = DefaultScreen(dis);
 	black = BlackPixel(dis,screen),	/* get color black */
 	white = WhitePixel(dis, screen);  /* get color white */
