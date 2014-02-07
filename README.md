@@ -12,6 +12,7 @@ boost.cpp       boost library required
 profiling.c     use with gprof
 
 TODO:
+* SSL
 * Signal handling
 * openGL
 * portaudio
