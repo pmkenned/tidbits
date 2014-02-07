@@ -2,7 +2,6 @@
 TARGET = xplatform
 
 ifeq ($(OS),Windows_NT)
-	@echo "windows"
 	include sources_win.mk
 else
 	UNAME_S := $(shell uname)
